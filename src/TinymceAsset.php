@@ -5,9 +5,24 @@ use yii\web\AssetBundle;
 
 class TinymceAsset extends AssetBundle
 {
+    /**
+     * @inheritdoc
+     */
     public $sourcePath = '@vendor/tinymce/tinymce';
 
-    public $js = [
-        'tinymce.min.js'
-    ];
+    /**
+     * @inheritdoc
+     */
+    public $js = [];
+
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        parent::init();
+
+        $min = YII_ENV_DEV ? '' : '.min';
+        $this->js[] = "tinymce{$min}.js";
+    }
 }
