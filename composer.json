@@ -2,20 +2,16 @@
     "name": "alikdex/yii2-tinymce-widget",
     "description": "Tinymce asset and widget for Yii2.",
     "type": "yii2-extension",
-    "keywords": [
-        "yii2",
-        "widget",
-        "tinymce"
-    ],
+    "keywords": ["yii2", "widget", "tinymce"],
     "license": "MIT",
     "authors": [
 		{
-			"name": "Alik Dexor",
-			"email": "alikdexor@gmail.com"
+	    	"name": "Alik Dexor",
+	    	"email": "alikdexor@gmail.com"
 		}
     ],
     "require": {
-        "yiisoft/yii2": "^2.0",
+        "yiisoft/yii2": "~2.0",
         "tinymce/tinymce": "~5.0"
     },
     "autoload": {
